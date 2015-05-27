@@ -1,9 +1,9 @@
-/* =VARIABLES
--------------------------------------------------------------- */
-/*===== Colors =====*/
-/**
- * App color palette
- */
+// /* =VARIABLES
+// -------------------------------------------------------------- */
+// /*===== Colors =====*/
+// /**
+//  * App color palette
+//  */
 $color-background: #fff;
 $color-background-alt: #fff;
 $color-background-alt2: #fff;
@@ -14,61 +14,61 @@ $color-text-callout: #fff;
 $color-border: #fff;
 
 
-/*===== Fonts =====*/
-/**
- * Main font, body copy, etc.
- */
+// /*===== Fonts =====*/
+// /**
+//  * Main font, body copy, etc.
+//  */
 $font-anchor: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-/**
- * Headers, special text sections, etc.
- */
+// /**
+//  * Headers, special text sections, etc.
+//  */
 $font-companion: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 
 
-/*===== Elements & Effects =====*/
-/**
- * Cubic-Bezier for CSS animations
- */
+// /*===== Elements & Effects =====*/
+// /**
+//  * Cubic-Bezier for CSS animations
+//  */
 $bezier: cubic-bezier(0.6, 0, 0.4, 1);
 
 
-/*===== Unit Measurements & Dimensions =====*/
-/**
- * Default font-size is set to 100% of the browser style sheet (usually 16px).
- * This is the default html and body font-size for the base em value.
- * Source: http://foundation.zurb.com/docs/components/sass.html
- */
+// /*===== Unit Measurements & Dimensions =====*/
+// /**
+//  * Default font-size is set to 100% of the browser style sheet (usually 16px).
+//  * This is the default html and body font-size for the base em value.
+//  * Source: http://foundation.zurb.com/docs/components/sass.html
+//  */
 $base-font-size: 100% !default;
 
-/**
- * $base-line-height is 24px while $base-font-size is 16px
- * Source: http://foundation.zurb.com/docs/components/sass.html
- */
+// /**
+//  * $base-line-height is 24px while $base-font-size is 16px
+//  * Source: http://foundation.zurb.com/docs/components/sass.html
+//  */
 $base-line-height: 150%;
 
-/**
- * Since the typical default browser font-size is 16px, that makes the calculation for grid size.
- * If you want your base font-size to be a different size and not have it effect grid size too,
- * set the value of $rem-base to $base-font-size ($rem-base: $base-font-size;)
- * Source: http://foundation.zurb.com/docs/components/sass.html
- */
+// /**
+//  * Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+//  * If you want your base font-size to be a different size and not have it effect grid size too,
+//  * set the value of $rem-base to $base-font-size ($rem-base: $base-font-size;)
+//  * Source: http://foundation.zurb.com/docs/components/sass.html
+//  */
 $rem-base: 16 !default;
 
 
-/*===== Global Path & Settings Defaults =====*/
-/**
- * Image Path
- */
+// /*===== Global Path & Settings Defaults =====*/
+// /**
+//  * Image Path
+//  */
 $img-path: '../img/';
 
-/**
- * SVG Sprite Dimensions - adjust each time sprite is updated
- */
+// /**
+//  * SVG Sprite Dimensions - adjust each time sprite is updated
+//  */
 $sprite-size: 100px 2118px;
 
-/**
- * Media Queries
- */
+// /**
+//  * Media Queries
+//  */
 $is-hdpi: "(-webkit-min-device-pixel-ratio: 1.5),
 			(min--moz-device-pixel-ratio: 1.5),
 			(min-device-pixel-ratio: 1.5),

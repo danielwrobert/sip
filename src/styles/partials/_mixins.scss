@@ -1,10 +1,10 @@
-/* =MIXINS
--------------------------------------------------------------- */
-/*===== Positioning =====*/
-/**
- * Cover or Center Everything
- * Source: http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
- */
+// /* =MIXINS
+// -------------------------------------------------------------- */
+// /*===== Positioning =====*/
+// /**
+//  * Cover or Center Everything
+//  * Source: http://codepen.io/chriscoyier/blog/some-mini-sass-mixins-i-like
+//  */
 @mixin coverer {
     position: absolute;
     top: 0;
@@ -21,10 +21,10 @@
 }
 
 
-/*===== Text =====*/
-/**
- * Truncate Text
- */
+// /*===== Text =====*/
+// /**
+//  * Truncate Text
+//  */
 @mixin text-truncate($width:100%) {
     width: $width;
     overflow: hidden;
@@ -32,29 +32,29 @@
     white-space: nowrap;
 }
 
-/**
- * Word Wrapping
- */
+// /**
+//  * Word Wrapping
+//  */
 @mixin word-wrap {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
 
-/*===== Gradients =====*/
-/**
- * Linear Gradient
- */
+// /*===== Gradients =====*/
+// /**
+//  * Linear Gradient
+//  */
 @mixin linear-gradient($from, $to) {
     background-color: $to; /* Fallback for sad browsers */
     background-image: linear-gradient($from, $to);
 }
 
 
-/*===== Embedded Content =====*/
-/**
- * Flexible iframes/videos
- */
+// /*===== Embedded Content =====*/
+// /**
+//  * Flexible iframes/videos
+//  */
 @mixin flex-frames {
     height: 0;
     padding-top: 30px;
@@ -71,12 +71,12 @@
 }
 
 
-/*===== RWD Helpers =====*/
-/**
- * Media Query Breakpoints
- * NOTE: The breakpoint values will need to be adjusted on a
- *       per-project bases, based on content.
- */
+// /*===== RWD Helpers =====*/
+// /**
+//  * Media Query Breakpoints
+//  * NOTE: The breakpoint values will need to be adjusted on a
+//  *       per-project bases, based on content.
+//  */
 @mixin breakpoint($point) {
     @if $point == large {
         // Minimum width of 960/16 pixels = 60em.
@@ -99,12 +99,12 @@
     }
 }
 
-/**
- * HiDPI Background Images
- * Source: http://www.abookapart.com/products/sass-for-web-designers (page 80)
- * NOTE: Image path in URL defined in Variables partial.
- * NOTE: The '&' placeholder in the book example is not needed to get the main selector from within the MQ - will also work without.
- */
+// /**
+//  * HiDPI Background Images
+//  * Source: http://www.abookapart.com/products/sass-for-web-designers (page 80)
+//  * NOTE: Image path in URL defined in Variables partial.
+//  * NOTE: The '&' placeholder in the book example is not needed to get the main selector from within the MQ - will also work without.
+//  */
 @mixin retina-bg($file, $type, $width, $height) {
     background-image: url($img-path + $file + '.' + $type);
 
@@ -114,31 +114,31 @@
     }
 }
 
-/**
- * SVG Background
- * NOTE: Image path in URL defined in Variables partial.
- */
+// /**
+//  * SVG Background
+//  * NOTE: Image path in URL defined in Variables partial.
+//  */
 @mixin svg-bg($file, $width, $height) {
     // background: transparent url($img-path + $file + '.png') center no-repeat; /* Uncomment if IE8 support needed */
     background: transparent url($img-path + $file + '.svg') center no-repeat;
     background-size: $width $height;
 }
 
-/**
- * SVG Sprite Background
- * NOTE: Image path in URL defined in Variables partial.
- *       SVG size for background-size declaration also defined in Variables partial.
- */
+// /**
+//  * SVG Sprite Background
+//  * NOTE: Image path in URL defined in Variables partial.
+//  *       SVG size for background-size declaration also defined in Variables partial.
+//  */
 @mixin svg-sprite($file, $x-pos, $y-pos) {
     // background: transparent url($img-path + $file + '.png') $x-pos $y-pos no-repeat; /* Uncomment if IE8 support needed */
     background: transparent url($img-path + $file + '.svg') $x-pos $y-pos no-repeat;
     background-size: $sprite-size;
 }
 
-/**
- * Rem calc with pixel fallback
- * Source: http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
- */
+// /**
+//  * Rem calc with pixel fallback
+//  * Source: http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+//  */
 @mixin rem-calc($property, $values...) {
   $max: length($values);
   $pxValues: '';
@@ -167,18 +167,18 @@
 }
 
 
-/*===== Helper Classes =====*/
-/*
- * Hide visually and from screen readers: h5bp.com/u
- */
+// /*===== Helper Classes =====*/
+// /*
+//  * Hide visually and from screen readers: h5bp.com/u
+//  */
 @mixin hidden {
     display: none !important;
     visibility: hidden;
 }
 
-/*
- * Hide only visually, but have it available for screen readers: h5bp.com/v
- */
+// /*
+//  * Hide only visually, but have it available for screen readers: h5bp.com/v
+//  */
 @mixin visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -191,10 +191,10 @@
 
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
+// /*
+//  * Extends the .visuallyhidden class to allow the element to be focusable
+//  * when navigated to via the keyboard: h5bp.com/p
+//  */
 @mixin focusable {
     @include visuallyhidden;
 
@@ -209,24 +209,24 @@
     }
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
+// /*
+//  * Hide visually and from screen readers, but maintain layout
+//  */
 @mixin invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+// /*
+//  * Clearfix: contain floats
+//  *
+//  * For modern browsers
+//  * 1. The space content is one way to avoid an Opera bug when the
+//  *    `contenteditable` attribute is included anywhere else in the document.
+//  *    Otherwise it causes space to appear at the top and bottom of elements
+//  *    that receive the `clearfix` class.
+//  * 2. The use of `table` rather than `block` is only necessary if using
+//  *    `:before` to contain the top-margins of child elements.
+//  */
 @mixin clearfix {
     &:before,
     &:after {

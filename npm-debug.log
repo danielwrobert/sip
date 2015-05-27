@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'shrinkwrap' ]
+2 info using npm@2.7.5
+3 info using node@v0.12.2
+4 verbose stack Error: Problems were encountered
+4 verbose stack Please correct and try again.
+4 verbose stack missing: gulp@^3.8.11, required by @1.0.0
+4 verbose stack missing: gulp-autoprefixer@^2.2.0, required by @1.0.0
+4 verbose stack missing: gulp-cache@^0.2.9, required by @1.0.0
+4 verbose stack missing: gulp-concat@^2.5.2, required by @1.0.0
+4 verbose stack missing: gulp-imagemin@^2.2.1, required by @1.0.0
+4 verbose stack missing: gulp-jshint@^1.10.0, required by @1.0.0
+4 verbose stack missing: gulp-notify@^2.2.0, required by @1.0.0
+4 verbose stack missing: gulp-ruby-sass@^1.0.5, required by @1.0.0
+4 verbose stack     at shrinkwrap_ (/usr/local/lib/node_modules/npm/lib/shrinkwrap.js:37:15)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/shrinkwrap.js:31:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/ls.js:47:30
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+4 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+4 verbose stack     at next (/usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:222:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:163:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:52:40
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:376:33
+5 verbose cwd /Users/danielrobert/Projects/Repositories/open-source/quickspark
+6 error Darwin 14.3.0
+7 error argv "node" "/usr/local/bin/npm" "shrinkwrap"
+8 error node v0.12.2
+9 error npm  v2.7.5
+10 error Problems were encountered
+10 error Please correct and try again.
+10 error missing: gulp@^3.8.11, required by @1.0.0
+10 error missing: gulp-autoprefixer@^2.2.0, required by @1.0.0
+10 error missing: gulp-cache@^0.2.9, required by @1.0.0
+10 error missing: gulp-concat@^2.5.2, required by @1.0.0
+10 error missing: gulp-imagemin@^2.2.1, required by @1.0.0
+10 error missing: gulp-jshint@^1.10.0, required by @1.0.0
+10 error missing: gulp-notify@^2.2.0, required by @1.0.0
+10 error missing: gulp-ruby-sass@^1.0.5, required by @1.0.0
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]
