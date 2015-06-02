@@ -4,6 +4,7 @@ var gulp = require( 'gulp' );
 // Include Plugins
 var sass = require( 'gulp-ruby-sass' ),
 	autoprefixer = require( 'gulp-autoprefixer' ),
+	imagemin = require( 'gulp-imagemin' ),
 	jshint = require( 'gulp-jshint' ),
 	concat = require( 'gulp-concat' ),
 	notify = require( 'gulp-notify' ),
@@ -18,7 +19,7 @@ var paths = {
 // Styles
 gulp.task( 'styles', function() {
 	return sass( 'src/styles/style.scss', { style: 'expanded' } )
-		.pipe( autoprefixer( { browsers: 'last 2 versions', cascade: false } ) )
+		.pipe( autoprefixer( { browsers: ['last 2 versions', 'ie >= 9'], cascade: false } ) )
 		.on('error', function (err) {
 			console.error('Error!', err.message);
 		})
@@ -35,6 +36,14 @@ gulp.task('scripts', function() {
 		.pipe( notify( { message: 'Scripts task complete' } ) );
 });
 
+// Images
+gulp.task('images', function() {
+  return gulp.src('src/images/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('images'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
 // Watch files for changes
 gulp.task( 'watch', function() {
 
@@ -43,6 +52,9 @@ gulp.task( 'watch', function() {
 
 	// Watch .js files
 	gulp.watch( 'src/scripts/**/*.js', ['scripts'] );
+
+	// Watch image files
+	gulp.watch( 'src/images/**/*', ['images'] );
 });
 
 // Default Task
