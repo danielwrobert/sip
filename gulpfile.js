@@ -5,6 +5,7 @@ var gulp = require( 'gulp' );
 var sass = require( 'gulp-ruby-sass' ),
 	autoprefixer = require( 'gulp-autoprefixer' ),
 	imagemin = require( 'gulp-imagemin' ),
+	pngquant = require('imagemin-pngquant'),
 	jshint = require( 'gulp-jshint' ),
 	concat = require( 'gulp-concat' ),
 	notify = require( 'gulp-notify' ),
@@ -38,10 +39,16 @@ gulp.task('scripts', function() {
 
 // Images
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('images'))
-    .pipe(notify({ message: 'Images task complete' }));
+  return gulp.src( 'src/images/*' )
+    .pipe( cache( imagemin( {
+		optimizationLevel: 3,
+		progressive: true,
+		interlaced: true,
+		svgoPlugins: [{ removeViewBox: false }],
+		use: [pngquant()]
+	} ) ) )
+    .pipe( gulp.dest( 'images' ) )
+    .pipe( notify( { message: 'Images task complete' } ) );
 });
 
 // Watch files for changes
@@ -54,7 +61,7 @@ gulp.task( 'watch', function() {
 	gulp.watch( 'src/scripts/**/*.js', ['scripts'] );
 
 	// Watch image files
-	gulp.watch( 'src/images/**/*', ['images'] );
+	gulp.watch( 'src/images/*', ['images'] );
 });
 
 // Default Task
