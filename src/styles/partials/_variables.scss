@@ -4,25 +4,23 @@
 // /**
 //  * App color palette
 //  */
-$color-background: #fff;
-$color-background-alt: #fff;
-$color-background-alt2: #fff;
-$color-text: #fff;
-$color-text-alt: #fff;
-$color-text-alert: #fff;
-$color-text-callout: #fff;
-$color-border: #fff;
+$color-background: #ffffff;
+$color-background-alt: #ffffff;
+$color-text-body: #ffffff;
+$color-text-headers: #ffffff;
+$color-accent: #ffffff;
+$color-borders: #ffffff;
 
 
 // /*===== Fonts =====*/
 // /**
 //  * Main font, body copy, etc.
 //  */
-$font-anchor: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-body: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // /**
 //  * Headers, special text sections, etc.
 //  */
-$font-companion: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+$font-headers: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 
 
 // /*===== Elements & Effects =====*/
