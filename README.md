@@ -6,3 +6,4 @@ Download or clone into your project, `cd` into project dir and run `npm init`, f
 
 ### Project Structure
 I currently have my dev files in the _src/_ directory. When compiled by Gulp, the CSS gets output into a _style.css_ file in the root directory and the JS gets output to the _script.js_ file in a _js/_ directory. Again, this can be adjusted as you see fit for your preference.
+At the moment, this structure is set up for WordPress theme development. I plan to separate different types of projects on separate branches and, ultimately, build a scaffolding generator for the different types.
