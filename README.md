@@ -1,4 +1,4 @@
-# Sippy Cup
+# Sip
 A quick Gulp starting point for any web project (uses Sass for CSS).
 
 ### Getting Started
